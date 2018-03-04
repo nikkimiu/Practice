@@ -12,6 +12,7 @@ namespace Nikki
 
         static void Main(string[] args)
         {
+            // Double is used to store decimal numbers
             double pi = 3.14;
             double radius = 0;
             string radiusNumber = Console.ReadLine();
