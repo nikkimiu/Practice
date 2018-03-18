@@ -4,29 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nikki
+namespace ConsoleApp1
 {
-
     class Program
     {
-
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 2 numbers");
-            String firstNumber = Console.ReadLine();
-            int first = int.Parse(firstNumber);
-            String secondNumber = Console.ReadLine();
-            int second = int.Parse(secondNumber);
-            int sum = first + second;
-            Console.WriteLine(sum);
-            int difference = first - second;
-            Console.WriteLine(difference);
-            int product = first * second;
-            Console.WriteLine(product);
-            int divide = first / second;
-            Console.WriteLine(divide);
-
-
+            Console.WriteLine("Write one Number");
+            int user = 0;
+            String userNumber = Console.ReadLine();
+            user = int.Parse(userNumber);
+            int firstNumber = user / 10000;
+            Console.WriteLine(firstNumber);
+            int secondNumber = user / 1000 % 10;
+            Console.WriteLine(secondNumber);
+            int thirdNumber = user / 100 % 100 % 10;
+            Console.WriteLine(thirdNumber);
+            int fourthNumber = user % 100 / 10;
+            Console.WriteLine(fourthNumber);
+            int lastNumber = user % 10;
+            Console.WriteLine(lastNumber);
+            Console.WriteLine(firstNumber + "   " + secondNumber + "   " + thirdNumber + "   " + fourthNumber + "   " + lastNumber);
         }
     }
 }
