@@ -18,11 +18,8 @@ namespace ConsoleApp1
             {
                 x = x * num;
                 num = num - 1;
-               
             }
             Console.WriteLine(x);
-
-
         }   
     }
 }
