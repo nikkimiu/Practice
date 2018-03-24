@@ -12,6 +12,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Write a number");
             string line = Console.ReadLine();
+            // allow us to write a num in Console
             int num = int.Parse(line);
             Int64 x = 1;
             while (num >1)
